@@ -6,7 +6,7 @@ import BodyV1 from "../components/v1/BodyV1"
 const Index = () => {
   return (
     <>
-      <HeaderV2 />
+      <HeaderV1 />
       <BodyV1 />
     </>
   )
