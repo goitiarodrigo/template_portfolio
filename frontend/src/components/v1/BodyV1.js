@@ -1,6 +1,18 @@
 import styles from '../../styles/bodyV1.module.css'
+import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
+import '@brainhubeu/react-carousel/lib/style.css';
+
+const arr = ["React", "React", "React", "React", "React", "React", "React", "React", "React", "React"]
+let newArr = []
+
+
 
 const BodyV1 = () => {
+
+  for (let i = 0; i <= arr.length; i=i+3) {
+    newArr.push(arr.slice(i, i+3))
+  }
+
   return (
     <div className={styles.body_container}>
       <div className={styles.bodyChildren_container}>
@@ -13,17 +25,30 @@ const BodyV1 = () => {
             <a>Saber más.</a>
           </div>
         </div>
-        <div className={styles.tecnologies_container}>
-          <span>React</span>
-          <span>React</span>
-          <span>React</span>
-          <span>React</span>
-          <span>React</span>
-          <span>React</span>
-          <span>React</span>
-          <span>React</span>
-          <span>React</span>
-        </div>
+        <Carousel
+          plugins={[
+            'infinite',
+          {
+            resolve: autoplayPlugin,
+            options: {
+              interval: 4000,
+            }
+          },
+          ]}   
+          animationSpeed={2000}
+        >
+          {newArr.map(arra => {
+            return (
+              <div className={styles.tecnologies_container}>
+              {
+                arra.map(item => {
+                  return <span>{item}</span>
+                })
+              }
+            </div>
+            )
+          })}
+        </Carousel>
       </div>
     </div>
   )
