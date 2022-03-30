@@ -2,7 +2,7 @@ import styles from '../../styles/bodyV1.module.css'
 import Carousel, { autoplayPlugin } from '@brainhubeu/react-carousel';
 import '@brainhubeu/react-carousel/lib/style.css';
 
-const arr = ["React", "React", "React", "React", "React", "React", "React", "React", "React", "React"]
+const arr = ["React", "React", "React", "React", "React", "React", "React", "React", "React", "React", "React"]
 let newArr = []
 
 
@@ -14,7 +14,7 @@ const BodyV1 = () => {
   }
 
   return (
-    <div className={styles.body_container}>
+    <div id='about' className={styles.body_container}>
       <div className={styles.bodyChildren_container}>
         <h1 className={styles.about_title}>Sobre Mi</h1>
         <div className={styles.about_container}>

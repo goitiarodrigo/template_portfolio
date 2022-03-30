@@ -7,7 +7,7 @@ const Nav = () => {
         <img src="./assets/portfolio.png"/>
         <div className={styles.anchor_container}>
           <a>Inicio</a>
-          <a>Sobre Mi</a>
+          <a href="#about">Sobre Mi</a>
           <a>Proyectos</a>
           <a>Contacto</a>
         </div>

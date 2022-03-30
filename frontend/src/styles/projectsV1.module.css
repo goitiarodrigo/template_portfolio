@@ -1,0 +1,41 @@
+div.container {
+    width: 100vw;
+    height: 100vh;
+    max-height: 100vh;
+    background-color: #0c0b48;
+    display: flex;
+    justify-content: center;
+}
+
+div.projects_container {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+ /* HACER CONDICIONAL. Si la cantidad de proyectos es impar aplicar odd, caso contrario even */
+div.projects_container div.project_image:nth-child(even) { 
+    margin-top: -200px;
+}
+
+div.project_image {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 49.85%;
+    height: 55%;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 3px;
+}
+
+div.description_container {
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 2rem;
+}
