@@ -8,7 +8,7 @@ const Nav = () => {
         <div className={styles.anchor_container}>
           <a>Inicio</a>
           <a href="#about">Sobre Mi</a>
-          <a>Proyectos</a>
+          <a href="#projects">Proyectos</a>
           <a>Contacto</a>
         </div>
       </nav>
