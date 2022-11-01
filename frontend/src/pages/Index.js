@@ -5,6 +5,7 @@ import BodyV1 from "../components/v1/BodyV1"
 import BodyV2 from "../components/v2/BodyV2"
 import ProjectsV1 from "../components/v1/ProjectsV1"
 import ProjectsV2 from "../components/v2/ProjectsV2"
+import Form from "../components/v1/Form"
 
 const Index = () => {
   return (
@@ -12,6 +13,7 @@ const Index = () => {
       <HeaderV2 />
       <BodyV2 />
       <ProjectsV2 />
+      <Form />
     </>
   )
 }

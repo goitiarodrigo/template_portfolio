@@ -9,7 +9,7 @@ const Nav = () => {
           <a>Inicio</a>
           <a href="#about">Sobre Mi</a>
           <a href="#projects">Proyectos</a>
-          <a>Contacto</a>
+          <a href="#contactForm">Contacto</a>
         </div>
       </nav>
     </div>
